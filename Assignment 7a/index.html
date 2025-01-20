@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 7a</title>
+  </head>
+  <body>
+    <h1>JavaScript Program to find the gross salary of a employee.</h1>
+
+    <script>
+      let employeeName = prompt("Enter employee name:");
+      let id = prompt("Enter employee id:");
+      let salary = +prompt("Enter salary:");
+
+      let ta = salary * 0.15;
+      let da = salary * 0.35;
+
+      let grossSalary = salary + ta + da;
+
+      console.log(`Gross Salary: ${grossSalary}`);
+    </script>
+  </body>
+</html>
