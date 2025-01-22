@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 8</title>
+  </head>
+  <body>
+    <h1>Time based Welcome Message</h1>
+
+    <script>
+      let time = +prompt("Enter time between 1 to 24):");
+
+      if (time <= 12) {
+        console.log("Good Morning!");
+      } else if (time <= 16) {
+        console.log("Good Noon!");
+      } else if (time <= 19) {
+        console.log("Good Evening!");
+      } else if (time <= 24) {
+        console.log("Good Night!");
+      } else {
+        console.log("Please enter time between 1 to 24 only");
+      }
+    </script>
+  </body>
+</html>
