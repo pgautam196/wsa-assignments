@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 9 - If-Else Only</title>
+  </head>
+  <body>
+    <h1>
+      Program to input three subjects marks and calculate average marks and
+      display grade according to average marks.
+    </h1>
+
+    <script>
+      let marks = [];
+      let x = 0;
+
+      if (true) {
+        marks[x] = +prompt(`Enter marks for subject ${x + 1}`);
+        x++;
+        if (x < 3) {
+          marks[x] = +prompt(`Enter marks for subject ${x + 1}`);
+          x++;
+          if (x < 3) {
+            marks[x] = +prompt(`Enter marks for subject ${x + 1}`);
+          }
+        }
+      }
+
+      function calculateGrade(mark1, mark2, mark3) {
+        let average = (mark1 + mark2 + mark3) / 3;
+        let grade;
+
+        if (average >= 90) {
+          grade = "Ex";
+        } else if (average >= 80) {
+          grade = "A+";
+        } else if (average >= 70) {
+          grade = "A";
+        } else if (average >= 60) {
+          grade = "B+";
+        } else {
+          grade = "Fail";
+        }
+
+        return grade;
+      }
+
+      let finalGrade = calculateGrade(marks[0], marks[1], marks[2]);
+      console.log(finalGrade);
+    </script>
+  </body>
+</html>
