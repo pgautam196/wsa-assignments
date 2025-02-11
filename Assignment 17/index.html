@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 17</title>
+    <style>
+      body {
+        font-family: "Poppins";
+        padding: 20px;
+      }
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      input,
+      button {
+        margin: 5px;
+        padding: 5px;
+      }
+      #output {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        min-height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>
+        Program to swap the word from lowercase to uppercase and vice versa.
+      </h2>
+      <input type="text" id="inputText" placeholder="Type here..." />
+
+      <button onclick="makeUpperCase()">UPPERCASE</button>
+      <button onclick="makeLowerCase()">lowercase</button>
+
+      <div id="output"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
